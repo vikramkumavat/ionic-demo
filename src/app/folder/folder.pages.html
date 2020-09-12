@@ -20,18 +20,9 @@
     <ion-item-divider> </ion-item-divider>
 
     <!-- Colors -->
-    <ion-button
-      class="ripple-paren"
-      (click)="presentAlertConfirm()"
-      color="primary"
-      fill="outline"
-      >Primary <IonRippleEffect type="unbounded"></IonRippleEffect
-    ></ion-button>
-
-    <!-- Round -->
-    <ion-button shape="round">Round Button</ion-button>
-
-    <ion-button shape="round" fill="outline">Outline + Round</ion-button>
+    <ion-button (click)="presentAlertConfirm()" color="primary"
+      >Primary</ion-button
+    >
 
     <ion-card>
       <ion-item
@@ -39,32 +30,32 @@
         class="ion-activated"
         *ngIf="folder == 'Inbox'"
       >
-        <ion-icon color="primary" name="mail" slot="start"></ion-icon>
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
         <ion-label>Inbox Link with inner Page</ion-label>
       </ion-item>
 
       <ion-item [routerLink]="folder/Outbox" *ngIf="folder == 'Outbox'">
-        <ion-icon color="primary" name="paper-plane" slot="start"></ion-icon>
+        <ion-icon name="paper-plane-outline" slot="start"></ion-icon>
         <ion-label>Outbox Link with inner Page</ion-label>
       </ion-item>
 
       <ion-item [routerLink]="folder/Favorites" *ngIf="folder == 'Favorites'">
-        <ion-icon color="danger" name="heart" slot="start"></ion-icon>
+        <ion-icon name="heart-outline" slot="start"></ion-icon>
         <ion-label>heart Link with inner Page</ion-label>
       </ion-item>
 
       <ion-item [routerLink]="folder/Archived" *ngIf="folder == 'Archived'">
-        <ion-icon color="primary" name="archive" slot="start"></ion-icon>
+        <ion-icon name="archive-outline" slot="start"></ion-icon>
         <ion-label>Archived Link with inner Page</ion-label>
       </ion-item>
 
       <ion-item [routerLink]="folder/Trash" *ngIf="folder == 'Trash'">
-        <ion-icon color="danger" name="trash" slot="start"></ion-icon>
+        <ion-icon name="trash-outline" slot="start"></ion-icon>
         <ion-label>Trash Link with inner Page</ion-label>
       </ion-item>
 
       <ion-item [routerLink]="folder/Spam" *ngIf="folder == 'Spam'">
-        <ion-icon color="warning" name="warning" slot="start"></ion-icon>
+        <ion-icon name="warning-outline" slot="start"></ion-icon>
         <ion-label>Spam Link with inner Page</ion-label>
       </ion-item>
     </ion-card>

@@ -7,7 +7,7 @@ import { AlertController } from "@ionic/angular";
   templateUrl: "./folder.page.html",
   styleUrls: ["./folder.page.scss"],
 })
-export class FolderPage implements OnInit {
+export class FolderPages implements OnInit {
   public folder: string;
 
   constructor(
